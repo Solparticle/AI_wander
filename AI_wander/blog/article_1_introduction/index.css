@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    font-family: 'Nunito', Sans-Serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #282828;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+@media screen and (min-width:767px) {
+    p, h4 {
+        font-size: x-large;
+    }
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 50px;
+    background: #282828;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+header h4, a {
+    margin: 20px;
+    color: #20E164;
+    text-decoration: none;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+}
+
+.topic {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topicImg {
+    width: 90%;
+}
+
+.topic h4 {
+    text-align: center;
+}
+
+.article {
+    width: 95%;
+    height: auto;
+    background: transparent;
+    margin: 2.5%;
+}
+
+/*Images*/
+
+.imageCont {
+    width: 95%;
+    height: auto;
+    background: transparent;
+    margin: 2.5%;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.imgDesc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: auto;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scm {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.scm i {
+    margin: 15px;
+}
+
+.footTxt {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footTxt p {
+    text-align: center;
+}
