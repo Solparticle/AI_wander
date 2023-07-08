@@ -9,6 +9,246 @@
     <script src="https://kit.fontawesome.com/7ac7b6b0a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" type="text/css" media="all" />
     <script defer src="index.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    font-family: 'Nunito', Sans-Serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #282828;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: #282828;
+    display: flex;
+    align-items: center;
+}
+
+header h3 {
+    margin-left: 10px;
+}
+
+header h4 {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+/* Nav */
+#nav {
+    width: 100%;
+    height: 100%;
+    background: rgba(89, 89, 89, .40);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    width: 80%;
+    height: 450px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.navItems {
+    width: 90%;
+    height: 50px;
+    background: #E9E9E9;
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    border-radius: 15px;
+}
+
+.on {
+    display: flex;
+}
+
+.navItems p {
+    color: black;
+    margin: 6px;
+}
+
+.navItems a, .navItems i {
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+}
+
+@media screen and (min-width: 767px) {
+    .navItems i {
+        margin-right: 200px;
+    }
+
+    #navOff {
+        margin-right: 200px;
+    }
+}
+
+.head {
+    width: 100%;
+    height: 50px;
+    background: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.articleSort {
+    width: 50%;
+    height: 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .5s;
+}
+
+.articleSort:hover {
+    background: rgba(108, 108, 108, .3);
+}
+
+.section {
+    width: 100%;
+    height: auto;
+}
+
+#scrollContainer {
+    width: 100%;
+    height: auto;
+    background: inherit;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.read {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    opacity: 0.3;
+    background: transparent;
+}
+
+@media screen and (min-width: 767px) {
+    .read {
+        height: 550px;
+    }
+
+    p, h4 {
+        font-size: x-large;
+    }
+}
+
+.articleContainer {
+    width: 90%;
+    height: auto;
+}
+
+.read.active {
+    opacity: 1;
+}
+
+.blog {
+    width: 90%;
+    height: auto;
+    background: transparent;
+    margin: 5%;
+    white-space: normal;
+}
+
+.blogImg {
+    width: 95%;
+    height: auto;
+    margin: 2.5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blogTxt {
+    width: 95%;
+    height: 75px;
+    margin: 2.5%;
+    border: 1px solid rgba(209, 209, 209, .45);
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.randomBlock {
+    width: 100%;
+    height: 80px;
+}
+
+@media screen and (min-width: 767px) {
+    .randomBlock {
+        height: 650px;
+    }
+}
+
+/* Footer */
+footer {
+    width: 90%;
+    height: 60px;
+    margin: 5%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, .33);
+    backdrop-filter: blur(7px);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footButton {
+    width: 55px;
+    height: 40px;
+    background: rgba(220, 220, 220, .33);
+    border-radius: 10px;
+    margin: 5px;
+    transition: border .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 767px) {
+    footer {
+        width: 80%;
+        margin: 10%;
+        margin-bottom: 5%;
+    }
+
+    .footButton {
+        width: 110px;
+    }
+}
+
+.footButton:hover {
+    border: 1px solid #099bff;
+}
+    </style>
 </head>
 
 <body>
